@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan Bandar Gamuda Cove</title>
+    <link rel="stylesheet" href="style.css">
+
+
+<style>
+
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background-color: #f0f0f0; 
+} 
+ 
+header { 
+  background-color: #fff; 
+  padding: 40px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+} 
+ 
+header img { 
+  height: 50px;  
+  width: auto;  
+} 
+ 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 50%;
+}
+ 
+* {box-sizing: border-box}
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+q {font-style: italic;}
+
+.author {color: cornflowerblue;}
+
+p {
+font-family: 'Verdana', sans-serif;
+}
+
+h1, h2, h3 {
+font-family: 'Constania', sans-serif;
+color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #185e74;
+   color: white;
+   text-align: center;
+}
+</style>
+
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="IMAGE/logo.jpg.png" width="40%" style="margin-right: 500px;"></a>
+            <div class="nav-links" style="float: right;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                    <a href="#">Township</a>
+                    <div class="dropdown-content">
+                    <a href="concept.html">Concept</a>
+                    <a href="element.html">Element</a>
+                    <a href="siteplan.html">Site Plan</a>
+                    </div>
+                    <li class="dropdown">
+                    <a href="leisure.html">Leisure</a>
+                    <div class="dropdown-content">
+                    <a href="discoverypark.html">Discovery Park</a>
+                    <a href="wetlands.html">Paya Indah Discovery</a>
+                    <a href="splashmania.html">Spash Mania</a>
+                    </div>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+          
+
+      
+        <p></p>
+    <img src="IMAGE/site.jpg" class="center">
+    <div class="slideshow-container">
+
+    <div class="mySlides">
+         
+          <p class="author"> Explore Gamuda Cove</p>
+           <p><b>Residential Areas</b>: Gamuda Cove was designed to have various residential options, such as landed properties, apartments, and possibly gated communities.</p>
+          </p>
+    </div>
+        
+    <div class="mySlides">
+        <p class="author"> Explore Gamuda Cove</p>
+        <p><b>Recreational Facilities</b>: Gamuda Cove aimed to provide residents with recreational facilities and green spaces, such as parks, jogging tracks, and possibly sports facilities.</p>
+          
+    </div>
+        
+    <div class="mySlides">
+        <p class="author"> Explore Gamuda Cove</p>
+        <p><b>Sustainable Features</b>: Modern townships often incorporate sustainable and eco-friendly features, such as green building practices, energy-efficient technologies, and environmental conservation efforts.</p>
+          
+    </div>
+    <div class="mySlides">
+        <p class="author"> Explore Gamuda Cove</p>
+        <p><b>Connectivity</b>: The development was likely to incorporate infrastructure for easy connectivity, including road networks and public transportation options.</p>
+    </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+</script>
+
+<br><br>
+<h2 style="text-align: center; font-size: 50px;"> <i>When we get the places right, the town works</i></h2>
+<img src="IMAGE/info.jpg" class="center" >
+
+
+
+<div class="footer">
+  <p>2024 Gamuda Cove. All rights reserved.</p>
+</div>
+
+
+</body>
+</html>
